@@ -28,6 +28,8 @@ cd; curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-uti
 
 - Select "Install/Update Full ROM Firmware" from the options.
 
+Go grab a cup of coffee and wait for your Chromebook's emancipation from Chrome OS.
+
 ### Install Debian from USB
 
 On another computer, download 64-bit Debian 11 "netinst" ISO with non-free firmware
@@ -52,7 +54,7 @@ Find your wireless router SSID with:
 
 `iwlist wlp2s0 scan | grep ESSID`
 
-Edit the */etc/network/interfaces* file with `nano` and make sure the section below is present:
+Edit the */etc/network/interfaces* file with `nano` and add the section below:
 ```
 allow-hotplug wlp2s0
 iface wlp2s0 inet dhcp
