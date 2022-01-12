@@ -13,7 +13,7 @@ Open the backside of the Chromebook (10 screws) and remove the Write-Protect scr
 
 ![alt text](https://blogger.googleusercontent.com/img/a/AVvXsEgGiekfZdsTWjjoi6dxTJ76_bxxlMBPdMQxtWiaQJHTLoYWmyxHZ6wGyYPex2wC3XrSjFCinZ5WlXx9PBQtmzVNAkr6YPA3NPVoX_rB5mwrEWe9GWzGTGHyT-bfodF_O0Tj6ui8BY9H-Uw-4PTzwT8xcX36uAPBWJLGWsnfYhudkUZ3BDiHka77wsnv=s1630 "WP Screw Location")
 
-Now we enable Developer Mode in order to flash a new firmware:
+Now we enable Developer Mode in order to flash a new boot UEFI firmware:
 
 - Turn on your device with `Esc + Refresh + Power`
 - Press `Ctrl + D` and press Enter to enable developer mode
