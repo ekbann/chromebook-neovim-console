@@ -6,7 +6,7 @@ Full stereo sound support
 TUI network-manager for wireless connections
 Search key working as CAPSLOCK key
 
-###Install Debian from USB:###
+### Install Debian from USB
 
 On another computer, download 64-bit Debian 11 "netinst" ISO with non-free firmware
 Create a USB installer with Etcher
@@ -14,7 +14,7 @@ Plug the USB Drive into the Chromebook
 Turn on the Chromebook, and boot from the USB drive
 During the installation package selection, de-select everything and just keep the "Standard System Utilities" and/or "SSH Server" if you want to remotely log in to this machine. This will keep things nice and light. After installation, your disk usage will be a lean 1.1GB used and 25GB available.
 
-###Setup Wireless Connection:###
+### Setup Wireless Connection
 
 As root user, use the commands below to find the name of your wireless device and ethernet device, in my case it was wlp2s0 (normally wlan0):
 
@@ -47,4 +47,4 @@ Once Internet connection is working, now is a good time to make sure the system 
 apt-get update
 apt-get upgrade
 
-###Running the Configuration Script###
+### Running the Configuration Script
