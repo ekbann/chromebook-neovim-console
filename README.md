@@ -1,10 +1,32 @@
 # chromebook-neovim-console
-Transform a Chromebook into a Neovim development platform running in a text TTY console. Minimal Linux installation using Debian 11 netinst non-free firmware version on an Acer Chromebook 14 (CB3-431).
+Transform a Chromebook into a Neovim development platform running in a text TTY console. Minimal Linux installation using Debian 11 netinst non-free firmware version on an Acer Chromebook 14 (Model CB3-431-12K1, Hardware ID: EDGAR) based on the Intel Braswell architecture. It has a full aluminum alloy housing, 14-inch HD screen (1366x768), an Intel Atom x5-E8000 (Quad-Core 1.04GHz, Turbo 2.0GHz, 2MB Cache), 4GB DDR3 RAM, and 32GB eMMC storage.
 
 - Full stereo sound support
 - 8x12 Terminus font with Powerline symbols
 - TUI network-manager for wireless connections
 - Search key working as CAPSLOCK key
+
+### Flash a Full UEFI Firmware ROM
+
+Open the backside of the Chromebook (10 screws) and remove the WP screw as shown below:
+
+![alt text](https://blogger.googleusercontent.com/img/a/AVvXsEgGiekfZdsTWjjoi6dxTJ76_bxxlMBPdMQxtWiaQJHTLoYWmyxHZ6wGyYPex2wC3XrSjFCinZ5WlXx9PBQtmzVNAkr6YPA3NPVoX_rB5mwrEWe9GWzGTGHyT-bfodF_O0Tj6ui8BY9H-Uw-4PTzwT8xcX36uAPBWJLGWsnfYhudkUZ3BDiHka77wsnv=s1630 "WP Screw Location")
+
+Now we enable Developer Mode in order to flash a new firmware:
+
+- Turn on your device with `Esc + Refresh + Power`
+- Press `Ctrl + D` and press Enter to enable developer mode
+- Press `Ctrl + D` to boot Chrome OS
+- Open a browser tab and press `Ctrl + Alt + T`
+- Type in "shell" and press `Enter`
+
+Paste the following into the shell and press enter:
+
+```
+cd; curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
+```
+
+- Select "Install/Update Full ROM Firmware" from the options.
 
 ### Install Debian from USB
 
@@ -30,7 +52,7 @@ Find your wireless router SSID with:
 
 `iwlist wlp2s0 scan | grep ESSID`
 
-Edit the */etc/network/interfaces* file with nano and make sure the section below is present:
+Edit the */etc/network/interfaces* file with `nano` and make sure the section below is present:
 ```
 allow-hotplug wlp2s0
 iface wlp2s0 inet dhcp
