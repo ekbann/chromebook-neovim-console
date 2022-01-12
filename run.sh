@@ -7,31 +7,24 @@ read -p $'\e[31m>>> Perform system update/upgrade with packages installation fir
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	apt update && apt upgrade -y
-	
 	# Wireless connectivity and miscellaneous firmware
-	apt install firmware-linux wicd-cli wicd-curses -y
+	apt install firmware-linux -y
+	apt install network-manager -y
 
 	# Sound
 	apt install firmware-intel-sound alsa-utils pulseaudio -y
 
-	# X Windows with i3 window manager
-	apt install xorg lightdm i3-wm i3status suckless-tools xterm -y
-
 	# Minimal tools and gadgets
 	apt install zip unzip rar unrar wget curl sudo htop -y
-	apt install dosfstools ntfs-3g exfat-fuse exfat-utils imagemagick -y
-	apt install feh fortune cowsay lolcat toilet figlet tty-clock -y
+	apt install dosfstools ntfs-3g exfat-fuse exfat-utils -y
+	apt install fortune cowsay lolcat toilet figlet tty-clock -y
+	
+	# Dev tools
+	apt install neovim git gcc make python3-pip idle3
 	
 	# Required packages for Google Chrome web browser
 	apt install fonts-liberation libnspr4 libnss3 xdg-utils -y
-	
-	# For SDL2 compilation, development packages
-	apt install build-essential xorg-dev libudev-dev libts-dev libgl1-mesa-dev libglu1-mesa-dev -y
-	apt install libasound2-dev libpulse-dev libopenal-dev libogg-dev libvorbis-dev libaudiofile-dev -y
-	apt install libpng12-dev libfreetype6-dev libusb-dev libdbus-1-dev zlib1g-dev libdirectfb-dev -y
-	apt install automake libxkbcommon-dev -y
-	
+		
 	reboot
 fi
 
