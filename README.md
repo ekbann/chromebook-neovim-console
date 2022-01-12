@@ -2,13 +2,14 @@
 Transform a Chromebook into a Neovim development platform running in a text TTY console. Minimal Linux installation using Debian 11 netinst non-free firmware version on an Acer Chromebook 14 (Model CB3-431-12K1, Hardware ID: EDGAR) based on the Intel Braswell architecture. It has a full aluminum alloy housing, 14-inch HD screen (1366x768), an Intel Atom x5-E8000 (Quad-Core 1.04GHz, Turbo 2.0GHz, 2MB Cache), 4GB DDR3 RAM, and 32GB eMMC storage.
 
 - Full stereo sound support
-- 8x12 Terminus font with Powerline symbols
+- Uses 8x12 Terminus font with Powerline symbols
+- An immense 227x64 of text real-estate
 - TUI network-manager for wireless connections
-- Search key working as CAPSLOCK key
+- SEARCH key working as CAPSLOCK
 
 ### Flash a Full UEFI Firmware ROM
 
-Open the backside of the Chromebook (10 screws) and remove the WP screw as shown below:
+Open the backside of the Chromebook (10 screws) and remove the Write-Protect screw as shown below:
 
 ![alt text](https://blogger.googleusercontent.com/img/a/AVvXsEgGiekfZdsTWjjoi6dxTJ76_bxxlMBPdMQxtWiaQJHTLoYWmyxHZ6wGyYPex2wC3XrSjFCinZ5WlXx9PBQtmzVNAkr6YPA3NPVoX_rB5mwrEWe9GWzGTGHyT-bfodF_O0Tj6ui8BY9H-Uw-4PTzwT8xcX36uAPBWJLGWsnfYhudkUZ3BDiHka77wsnv=s1630 "WP Screw Location")
 
