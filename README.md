@@ -3,7 +3,7 @@ Transform a Chromebook into a Neovim development platform running in a text TTY 
 
 - Full stereo sound support
 - Uses 8x12 Terminus font with Powerline symbols
-- An immense 227x64 of text real-estate
+- A TTY console with 227x64 of text real-estate
 - TUI network-manager for wireless connections
 - SEARCH key working as CAPSLOCK
 
