@@ -9,9 +9,11 @@ Transform a Chromebook into a Neovim development platform running in a text TTY 
 ### Install Debian from USB
 
 On another computer, download 64-bit Debian 11 "netinst" ISO with non-free firmware
+
 - Create a USB installer with Etcher
 - Plug the USB Drive into the Chromebook
 - Turn on the Chromebook, and boot from the USB drive
+
 During the installation package selection, de-select everything and just keep the "Standard System Utilities" and/or "SSH Server" if you want to remotely log in to this machine. This will keep things nice and light. After installation, your disk usage will be a lean 1.1GB used and 25GB available.
 
 ### Setup Wireless Connection
