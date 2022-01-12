@@ -75,4 +75,6 @@ Once Internet connection is working, now is a good time to make sure the system 
 apt-get update
 apt-get upgrade
 ```
+Now we are ready to install all of our desired packages in a fully automated manner.
+
 ### Running the Configuration Script
